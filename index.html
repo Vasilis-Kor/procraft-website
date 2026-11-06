@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ProCraft Store Manager - Εφαρμογή διαχείρισης αποθήκης, πωλήσεων και πελατών.">
+  <title>ProCraft Store Manager | Επίσημη Ιστοσελίδα</title>
+  <style>
+    :root {
+      --bg: #0c171b;
+      --surface: #132a2b;
+      --green: #4fd1a1;
+      --text: #edf6f2;
+      --muted: #b2c9c3;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 22px 7%;
+      border-bottom: 1px solid #294642;
+    }
+    .brand {
+      font-size: 23px;
+      font-weight: 800;
+      color: var(--green);
+    }
+    nav { display: flex; gap: 20px; flex-wrap: wrap; }
+    a { color: var(--green); text-decoration: none; }
+    nav a { color: var(--text); }
+    a:hover { text-decoration: underline; }
+    .hero {
+      text-align: center;
+      padding: 105px 20px 95px;
+      background: radial-gradient(ellipse at top, #1b4540, var(--bg) 75%);
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 60px);
+      line-height: 1.15;
+      margin: 0 0 22px;
+    }
+    h1 span { color: var(--green); }
+    .hero p {
+      max-width: 690px;
+      margin: auto;
+      font-size: 19px;
+      color: var(--muted);
+    }
+    .button {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 13px 27px;
+      border-radius: 9px;
+      background: var(--green);
+      color: #09211b;
+      font-weight: 700;
+    }
+    .button:hover { text-decoration: none; background: #79e5bd; }
+    section { padding: 65px 7%; max-width: 1200px; margin: auto; }
+    h2 { font-size: 30px; margin: 0 0 12px; }
+    .intro { color: var(--muted); margin-bottom: 30px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 18px;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid #2a4943;
+      border-radius: 14px;
+      padding: 25px;
+    }
+    .card h3 { margin-top: 0; color: var(--green); }
+    .card p { color: var(--muted); margin-bottom: 0; }
+    .privacy {
+      background: #102421;
+      border-top: 1px solid #294642;
+      border-bottom: 1px solid #294642;
+    }
+    .privacy-inner { max-width: 1000px; margin: auto; padding: 55px 7%; }
+    footer {
+      padding: 30px 7%;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    footer a { margin: 0 10px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">ProCraft Store Manager</div>
+    <nav>
+      <a href="#features">Λειτουργίες</a>
+      <a href="#backups">Αντίγραφα ασφαλείας</a>
+      <a href="#about">Σχετικά</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h1>Οργάνωσε το κατάστημά σου<br><span>με το ProCraft</span></h1>
+      <p>
+        Μια εφαρμογή διαχείρισης αποθήκης, προϊόντων,
+        πωλήσεων και πελατών, σχεδιασμένη για τις
+        καθημερινές ανάγκες ενός καταστήματος.
+      </p>
+      <a class="button" href="#features">Ανακάλυψε τις λειτουργίες</a>
+    </div>
+
+    <section id="features">
+      <h2>Βασικές λειτουργίες</h2>
+      <p class="intro">Τα εργαλεία που χρειάζεται μια επιχείρηση για την καθημερινή οργάνωσή της.</p>
+      <div class="grid">
+        <div class="card">
+          <h3>Προϊόντα & Αποθήκη</h3>
+          <p>Παρακολούθηση αποθεμάτων, barcodes, τιμών και ειδοποιήσεων χαμηλού αποθέματος.</p>
+        </div>
+        <div class="card">
+          <h3>Ταμείο & Πωλήσεις</h3>
+          <p>Καταχώρηση πωλήσεων, εκπτώσεων και διαφορετικών τρόπων πληρωμής.</p>
+        </div>
+        <div class="card">
+          <h3>Πελατολόγιο</h3>
+          <p>Διαχείριση πελατών, αγορών, πληρωμών και οφειλών.</p>
+        </div>
+        <div class="card">
+          <h3>Παραλαβές & Αποθέματα</h3>
+          <p>Καταγραφή παραλαβών, αλλαγών αποθέματος και επιστροφών.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="privacy" id="backups">
+      <div class="privacy-inner">
+        <h2>Αντίγραφα ασφαλείας</h2>
+        <p>
+          Το ProCraft διαθέτει μηχανισμό δημιουργίας
+          κρυπτογραφημένων αντιγράφων ασφαλείας.
+          Η σύνδεση με το Google Drive χρησιμοποιείται
+          για την αποθήκευση των αντιγράφων στον
+          λογαριασμό που εξουσιοδοτεί ο χρήστης.
+        </p>
+        <p>
+          Η εφαρμογή ζητά περιορισμένη πρόσβαση μέσω
+          του Google Drive API για τη διαχείριση των
+          αρχείων που χρησιμοποιεί.
+        </p>
+      </div>
+    </div>
+
+    <section id="about">
+      <h2>Σχετικά με το ProCraft</h2>
+      <p class="intro">
+        Το ProCraft Store Manager είναι μια εφαρμογή
+        διαχείρισης καταστήματος για υπολογιστές Windows.
+        Στόχος της είναι να απλοποιεί την οργάνωση
+        προϊόντων, αποθήκης και καθημερινών συναλλαγών.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 ProCraft Store Manager</p>
+    <p>
+      <a href="privacy.html">Πολιτική απορρήτου</a>
+      <a href="terms.html">Όροι χρήσης</a>
+    </p>
+  </footer>
+</body>
+</html>
